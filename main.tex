@@ -1,0 +1,129 @@
+%-------------------------
+% Resume Template
+% Author : Orest Tokovenko
+% Github : https://github.com/oresttokovenko
+% License : MIT
+% Type: Professional Developer
+%------------------------
+
+%-------------------------------------------------------------------------------
+%                Document & Class
+%-------------------------------------------------------------------------------
+
+\documentclass[letterpaper]{resume_config}
+
+% NOTE: <- font size adjustment is available in the resume_config.cls file on the left hand side. ex. \LoadClass[#pt]{article} where # is 10, 11 or 12
+
+% NOTE: If you need to adjust the space between any two lines, use this function: \vspace{#pt} where # is your number. ex. \vspace{-5pt} decreases the space between lines
+
+%-------------------------------------------------------------------------------
+%                Resume Starts Here
+%-------------------------------------------------------------------------------
+
+\begin{document}
+
+\Header
+    {Rishabh Asthana} % name
+    {New York, NY} % city, province
+    {217-305-1260} % phone number
+    {rishabh.asthana163@gmail.com} % email
+    {rishabh-asthana} % https://linkedin.com/in/_______
+    {RishabhAsthana} % https://github.com/_______
+    [www.rishabhasthana.com] % website - this parameter is optional, removing it won't impact the function's behavior
+
+%-------------------------------------------------------------------------------
+%                Work Experience
+%-------------------------------------------------------------------------------
+
+\section{Work Experience}
+
+\WorkExperience
+    {Frontend Engineer II} % job title
+    {Amazon Web Services (AWS DataZone)} % company name
+    {July 2022 -- Present} % beginning and end of employment. If currently employed write " -- Present"
+    {New York, NY} % city, country of employment
+    {
+        \item Led migration of frontend framework to modern React, TailwindCSS, Vite, Zustand and File based router. This significantly improved developer experience, velocity, and introduced standardization for over 86 developers
+        \item Parallelized canary/integration test executions, reducing total runtime from 50 minutes to 5 minutes. This accelerated feedback loop for developers to test out their changes and reduced time to detect anomalies in production stages
+        \item Implemented several pages of the web application, set good UX standards that avoid layout shifts, utilize optimistic rendering, developed components that are a11y and i18n compliance
+    } 
+    
+\WorkExperience
+    {UI Developer} % job title
+    {Akuna Capital} % company name
+    {Feb 2019 -- July 2022} % beginning and end of employment. If currently employed write " -- Present"
+    {Chicago, IL} % city, country of employment
+    {
+        \item Designed and implemented a modular microfrontend framework that supports lazily loading modules allowing users to curate their own dashboards using SvelteKit, Typescript and TailwindCSS
+        \item Created an architecture design that allows for stream processing UI workloads using Python for data ingestion, Redis for caching, and Go APIs for maximum performance at low resource overheads and horizontal scalability at every layer
+        \item Implemented Single Sign On at proxy level for over 60 dashboards in a non-intrusive manner, greatly improving security and user experience
+        \item Published a Chromium Extension to serve as a portal for all Akuna dashboard access and layout management, lifting mental bookkeeping effort on the user's part to the machine
+        \item Setup and managed deployments with Kubernetes, ensuring zero downtime and fault-tolerant dashboards and services
+    } 
+
+\WorkExperience
+    {Software Engineer Intern} % job title
+    {Yahoo Inc. (Verizon Digital Media Services)} % company name
+    {May 2018 -- Aug 2018} % beginning and end of employment
+    {Los Angeles, CA} % city, country of employment
+    {
+        \item Created a coredump handler for error telemetry of over 22000 production servers using gdb, Python for better visibility and trend analysis of process crashes. Used AWS and Docker to host a Sentry.io stack capable of handling upto 15 million coredump crash events every day
+        \item Developed a RESTful API to leverage eBPF kernel tools for extremely performant, remote system monitoring of production servers using Python and C, coupled with a React and D3.js frontend
+    }
+
+\WorkExperience
+    {Software Engineer Intern} % job title
+    {Exegy Inc.} % company name
+    {May 2017 -- Aug 2017} % beginning and end of employment
+    {St. Louis, MO} % city, country of employment
+    {
+        \item Designed and implemented a web interface using Python/Flask backend, HTML5/CSS/Bootstrap frontend for an extensively used testing utility for simulating trade events, reducing testing times from 10 minutes to 30 seconds
+        \item Enhanced functionality of testing utility written in C by enabling manipulation of UDP packets in data logs to allow for simulating different scenarios, significantly increasing testing coverage
+    }
+
+\vspace{-10pt}
+%-------------------------------------------------------------------------------
+%                Certifications
+%-------------------------------------------------------------------------------
+
+% \section{Certifications}
+
+% \Certification
+%     {Certified Developer - Associate} % credential name
+%     {Amazon Web Services (AWS)} % issuing institution
+%     {Aug 2021} % date of completion
+
+% \vspace{-7pt}
+%-------------------------------------------------------------------------------
+%                Education
+%-------------------------------------------------------------------------------
+
+\section{Education}
+
+\EducationExperience
+    {University of Illinois at Urbana Champaign} % school name
+    {Bachelor of Science, Computer Science} % credential name
+    {Dec 2018} % date of graduation
+    {GPA: 3.61/4.00} % city, country of school
+
+\vspace{-14pt}
+%-------------------------------------------------------------------------------
+%                Skills
+%-------------------------------------------------------------------------------
+
+\section{Skills}
+
+\vspace{1pt}
+
+\SkillList{
+    \SkillItem{Languages}{: Typescript, Javascript, Python, Golang, LaTeX, C/C++}
+    \SkillItem{Frameworks}{: Sveltekit, React, FastAPI, TailwindCSS, Figma, Redux, Zustand }
+    \SkillItem{Databases}{: PostgreSQL, Redis, SQLite}
+    \SkillItem{Cloud Tools}{: AWS, Firebase}
+}
+
+\end{document}
+
+%-------------------------------------------------------------------------------
+%                Resume Ends Here
+%-------------------------------------------------------------------------------
